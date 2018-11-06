@@ -1,0 +1,30 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='./static/style.css'>
+        <script src='./static/client.js'></script>
+    </head>
+    <body>
+        <div>
+            <div class='center'>
+                <div class='title'>CONVERT A SHARE LINK TO A DOWNLOAD FILE LINK</div>
+                <div class='content'>
+                    <div class='text-input'>
+                        <div class='text-label'>SHARE LINK</div>
+                        <input id='sharelink-input' type='text' name='url' size='75'>
+                    </div>
+                    <button id='convert-button' class='convert-button' type='button' onclick='convertURL()'>Convert</button>
+                    <div id='result-div' class='no-display'>
+                        <div class='text-label'>DOWNLOAD LINK</div>
+                        <input id='downloadlink-input' type='text' name='url' size='75'>
+                    </div>
+                </div>
+                <div class='footer'>
+                    <div class='text-label' style='text-decoration:underline;'> Supported</div>
+                    <div class='text-label'> GDrive, Dropbox</div>
+                    <div class='text-label'> Please add support for your favorite cloud providers by making a <a href='https://github.com/navjotts/raw-download-url'>Pull Request</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
