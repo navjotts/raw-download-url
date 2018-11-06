@@ -31,6 +31,18 @@ body {
 }
 
 .text-label {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.message-label {
+    padding: 2px;
+    padding-top:20px;
+    font-size: 14px;
+    color: #EB434A;
+}
+
+.footer-label {
     padding: 2px;
     font-size: 13px;
 }
