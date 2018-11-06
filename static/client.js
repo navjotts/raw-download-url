@@ -1,23 +1,9 @@
-const HOSTURL = 'http://localhost:5042';
-
-function showFilePicker(inputId) {
-    var input = document.getElementById('file-input');
-    input.click();
-}
-
-function showFilePicked() {
-    var files = document.getElementById('file-input').files;
-    if (files.length == 1) {
-        document.getElementById('upload-label').innerHTML = files[0].name;
-    }
-}
-
 function convertURL() {
-    document.getElementById('downloadlink-input').value = downloadURL(document.getElementById('sharelink-input').value);
+    document.getElementById('downloadlink-input').value = getDownloadURL(document.getElementById('sharelink-input').value);
     document.getElementById('result-div').className = 'text-input';
 }
 
-function downloadURL(shareURL) {
+function getDownloadURL(shareURL) {
     if (shareURL.includes('dropbox.com')) {
         splits = shareURL.split('?')
         return splits.slice(0, splits.length-1).join('') + '?raw=1'
